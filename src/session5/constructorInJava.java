@@ -5,6 +5,12 @@ public class constructorInJava {
 	constructorInJava(){
 
 	}
+	{
+		System.out.println("inside Instance block-1");
+	}
+	{
+		System.out.println("inside Instance block-2");
+	}
 
 	constructorInJava(int i){
 		System.out.println("inside constructorInJava--->" +i);
@@ -13,8 +19,9 @@ public class constructorInJava {
 	public static void main(String[] args) {
 
 		constructorInJava constructorInJava = new constructorInJava();
-		constructorInJava.methodA();
-		constructorInJava constructorInJava2 = new  constructorInJava(5);
+		constructorInJava constructorInJava2 = new constructorInJava();
+		//constructorInJava.methodA();
+		constructorInJava constructorInJava3 = new  constructorInJava(5);
 
 	}
 
